@@ -8,9 +8,10 @@ import StyledComponents from '../../public/StyledComponents.svg';
 import ThreeTec from '../../public/ThreeTec.svg';
 
 const Skills = styled.section`
-    margin-top: 5%;
-    max-width: 100%;
+    margin: 5% auto 0 auto;
+    max-width: 1000px;
     border-top: 3px solid #1B8E99;
+    
     @media(max-width: 980px){
         border-top: 0;
         
@@ -60,12 +61,15 @@ const TitleSingle = styled.h2`
 
 const Title = styled.h3`
     font-size: 1.2rem;
+    font-family: 'Roboto', serif;
+    font-style: italic;
+    color: #FFC300;
 
 `;
 
 const Text = styled.p`
     flex: 1;
-
+    font-family: 'Roboto', serif;
 `;
 
 const List = styled.li`

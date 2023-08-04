@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import danki from '../assets/img/Danki-Code.jpg';
 
 
 const CertificateSection = styled.section`
@@ -34,16 +35,20 @@ const VerticalLine = styled.div`
     background-color: black;
 `;
 
-const ImgCertificate = styled.div`
-    border: 3px solid #181616;
-    background-color: white;
+const ImgCertificate = styled.div<{img?:string}>`
+    border: 3px solid #FFC300;
+    background-color: #FFC300;
     position: absolute;
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
+    background-image: url(${props=>props.img});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 `;
 const TitleSingle = styled.h2`
@@ -68,9 +73,13 @@ const WrapperText = styled.div`
     gap: 15px;
 `;
 
-const TitleCourse = styled.h3``;
+const TitleCourse = styled.h3`
+    font-family: 'roboto',serif;
+`;
 
-const TexteCourse = styled.p``;
+const TexteCourse = styled.p`
+    font-family: 'roboto',serif;
+`;
 
 const Certificate : React.FC = ()=>{
 
@@ -87,8 +96,7 @@ const Certificate : React.FC = ()=>{
                     </WrapperText>
                 </WrapperCertificate>
                 <VerticalLine>
-                        <ImgCertificate>
-                        </ImgCertificate>
+                        <ImgCertificate img={danki}/>
                 </VerticalLine>               
             </ContainerCertificate>
 
@@ -100,8 +108,7 @@ const Certificate : React.FC = ()=>{
                     </WrapperText>                   
                 </WrapperCertificate>
                 <VerticalLine>
-                        <ImgCertificate>
-                        </ImgCertificate>
+                    <ImgCertificate img={danki}/>
                 </VerticalLine>               
             </ContainerCertificate>
 

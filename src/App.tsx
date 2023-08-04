@@ -4,6 +4,9 @@ import Header from './components/Header';
 import Call from './components/Call';
 import Background from "./components/ImgBackground";
 import Skill from './components/Skills';
+import Projects from './components/Project';
+import Certificate from './components/Certificates';
+import Form from './components/Form';
 
 // type Props={
 //   children: ReactNode,
@@ -23,15 +26,15 @@ const Centralizer = styled.div`
   @media(max-width: 980px){
       min-height: 80vh;
     }
-`
+`;
 
-const CentralizerBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: 0 auto;
-`
+const Blockquote = styled.blockquote`
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Roboto', serif;
+  
 
+`
 
 
 const App : React.FC = ()=>{
@@ -48,11 +51,13 @@ const App : React.FC = ()=>{
       </header>   
       <Background/>
       <main>
-        <CentralizerBody>
-          <Skill/>
-        </CentralizerBody>
-      </main>
-
+        <Skill/>       
+        <Projects/>
+        <Certificate/>
+        <Form/>
+      </main>           
+      <Blockquote>© 2023 Alexsandro Souza Dev. Todos os direitos reservados.</Blockquote>  
+      
       
 
 

@@ -43,7 +43,7 @@ const Link = styled.a`
 `;
 const WrapperSocial = styled.div<{color?: string}>`
     padding: 6px;
-    border: 4px solid ${(props: { color: string; })=>props.color?props.color:`black`};
+    border: 4px solid ${(props)=>props.color?props.color:`black`};
     border-radius: 50%;
     
     
@@ -55,7 +55,7 @@ const Call : React.FC = ()=>{
     return(
         <>
         <Wraper>
-            <Title>Alexsandro souza</Title>
+            <Title>Alexsandro Souza</Title>
             <Text style={{fontSize:'1.75rem'}}>Desenvolvedor Web</Text>
             <Text style={{marginTop:'10px'}}>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</Text>
             <SocialMedia>

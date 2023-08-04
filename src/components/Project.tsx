@@ -12,7 +12,7 @@ const Projects = styled.section`
 const Container = styled.div`
     display: flex;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 2%;
@@ -72,7 +72,7 @@ const Links = styled.a`
 const Select = styled.p`
     margin-top: 10px;
 `;
-const Project = ()=>{
+const Project : React.FC = ()=>{
 
 
     return(
