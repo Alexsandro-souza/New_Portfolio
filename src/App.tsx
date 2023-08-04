@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import Call from './components/Call';
 import Background from "./components/ImgBackground";
+import Skill from './components/Skills';
 
 // type Props={
 //   children: ReactNode,
@@ -24,6 +25,13 @@ const Centralizer = styled.div`
     }
 `
 
+const CentralizerBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+`
+
 
 
 const App : React.FC = ()=>{
@@ -32,13 +40,17 @@ const App : React.FC = ()=>{
   return(
     <>
     <ContainerMain>    
-      <Centralizer>        
-        <Header/>
-        <Call/>       
-      </Centralizer>
+      <header>
+        <Centralizer>        
+          <Header/>
+          <Call/>    
+        </Centralizer>
+      </header>   
       <Background/>
       <main>
-      
+        <CentralizerBody>
+          <Skill/>
+        </CentralizerBody>
       </main>
 
       

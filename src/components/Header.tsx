@@ -65,7 +65,7 @@ const Header : React.FC = ()=>{
                             <Link href='/'>Home</Link>
                         </List>
                         <List>
-                            <Link href='/'>Sobre</Link>
+                            <Link href='/'>Sobre min</Link>
                         </List>
                         <List>
                             <Link href='/'>Habilidades</Link>
