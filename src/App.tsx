@@ -1,12 +1,13 @@
 import React from "react";
 import styled from 'styled-components';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Call from './components/Call';
 import Background from "./components/ImgBackground";
 import Skill from './components/Skills';
 import Projects from './components/Project';
 import Certificate from './components/Certificates';
 import Form from './components/Form';
+import Navigate from "./components/Header/Nav";
 
 // type Props={
 //   children: ReactNode,
@@ -28,11 +29,19 @@ const Centralizer = styled.div`
     }
 `;
 
+
 const Blockquote = styled.blockquote`
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   text-align: center;
   font-family: 'Roboto', serif;
-  
+`
+const Div = styled.div`
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+    
+    
 
 `
 
@@ -55,7 +64,11 @@ const App : React.FC = ()=>{
         <Projects/>
         <Certificate/>
         <Form/>
-      </main>           
+      </main>
+      <Div>
+        <Navigate/>           
+      </Div>
+      
       <Blockquote>© 2023 Alexsandro Souza Dev. Todos os direitos reservados.</Blockquote>  
       
       

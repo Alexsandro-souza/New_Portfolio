@@ -58,7 +58,7 @@ const TitleSingle = styled.h2`
     font-family: 'Playfair Display',serif;
     font-weight: 450;
     color: #00B894;
-    margin-bottom: 30px;
+    margin: 30px;
 `;
 
 const WrapperText = styled.div`
@@ -86,7 +86,7 @@ const Certificate : React.FC = ()=>{
 
     return(
         <>
-        <CertificateSection>
+        <CertificateSection id='Certificates'>
             <TitleSingle>Cursos e Certificados</TitleSingle>
             <ContainerCertificate>            
                 <WrapperCertificate>

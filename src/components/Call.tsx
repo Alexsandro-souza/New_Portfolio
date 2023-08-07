@@ -7,7 +7,7 @@ const Wraper = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    margin-top: 15%;
+    margin-top: 10%;
     gap: 5px;
     
 
@@ -49,8 +49,6 @@ const WrapperSocial = styled.div<{color?: string}>`
     
 `
     
-
-
 const Call : React.FC = ()=>{
     return(
         <>
@@ -59,7 +57,7 @@ const Call : React.FC = ()=>{
             <Text style={{fontSize:'1.75rem'}}>Desenvolvedor Web</Text>
             <Text style={{marginTop:'10px'}}>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</Text>
             <SocialMedia>
-                <WrapperSocial color='rgb(2, 132, 199)'>
+                <WrapperSocial color='rgb(94, 158, 190)'>
                     <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
                     target='black'>
                         <img style={{width: '25px', height: '25px'}} src={linkedin} alt='logo do linkedin'/>

@@ -14,6 +14,13 @@ const LabelColor = styled.div`
     background-color: rgb(2, 132, 199);
 
 `
+const WrapperSocial = styled.div<{color?: string}>`
+    padding: 6px;
+    border: 4px solid ${(props)=>props.color?props.color:`black`};
+    border-radius: 50%; 
+    background-color: white; 
+    
+`
 const Container = styled.div`
     display: flex;
     margin-top: 40px;
@@ -24,13 +31,15 @@ const Container = styled.div`
 
 const Title = styled.h3`
     color: white;
-    text-align: center;
-    margin: 10% 0 5px 0;
+    margin: 10% 0 0 0;
+    padding-left: 2% ;
+    font-family: 'Roboto', serif;
 `;
 
 const Text = styled.p`
     color: white;
     padding: 2% ;
+    font-family: 'Roboto', serif;
 `;
 
 const Link = styled.a`
@@ -41,6 +50,7 @@ const Wrapper = styled.div`
     justify-content: space-around;
     width: 50%;
     margin: 5% auto;
+    
 `;
 const ContainerForm = styled.form`
     width: 50%;
@@ -49,11 +59,12 @@ const ContainerForm = styled.form`
 `
 const WrapperForm = styled.div`
     margin-left: 50px;
-    margin-bottom: 50px;    
+    margin-bottom: 30px;    
 `
 const Label = styled.label`
     display: inline-block;
     padding-bottom: 2%;
+    font-family: 'Roboto', serif;
 `;
 
 const Input = styled.input`
@@ -80,6 +91,7 @@ const Buttom = styled.button`
     padding: 8px;
     margin: 20px 0 0 98%;
     border-radius: 15%;
+    color: white;
     cursor: pointer;
 
 `
@@ -93,8 +105,8 @@ const handleChangeName = (e: { target: { value: string; }; })=>{name = Boolean(e
 const handleChangeMessage = (e: { target: { value: string; }; })=>{message = Boolean(e.target.value)}
 
 
-const handleClick = (e: { preventDefault: () => void; })=>{
-    e.preventDefault();
+const handleClick = ()=>{
+    
     if(!email && !name && !message){
         alert('Todos os campos estão vazios')
     }else if(!email){
@@ -119,19 +131,26 @@ const Form = ()=>{
                     <Title>Email para contato</Title>
                     <Text style={{textDecoration: 'underline'}}>alexsandrosouza.contato@gmail.com</Text>
                     <Text style={{marginTop: '40px'}}>Me adicione nas redes abaixo!</Text>
+                    <Text style={{marginTop: '10px'}}>Cada linha de código é uma oportunidade de criar algo incrível. Mal posso esperar para colaborar no seu próximo projeto!</Text>
                     <Wrapper>
-                        <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
-                        target='black'>
-                            <img style={{width: '25px', height: '25px'}} src={linkedin} alt='logo do linkedin'/>
-                        </Link>
-                        <Link href='https://github.com/Alexsandro-souza'
-                        target='black'>
-                            <img style={{width: '25px', height: '25px'}} src={github} alt='logo do github'/>
-                        </Link>
-                        <Link href='https://web.whatsapp.com/send?phone=%7B+5587998039425%7D'
-                        target='black'>
-                            <img style={{width: '25px', height: '25px'}} src={whatsapp} alt='logo do whatsapp'/>
-                        </Link>
+                        <WrapperSocial color='rgb(94, 158, 190)'>
+                            <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
+                            target='black'>
+                                <img style={{width: '25px', height: '25px'}} src={linkedin} alt='logo do linkedin'/>
+                            </Link>
+                        </WrapperSocial>
+                        <WrapperSocial>
+                            <Link href='https://github.com/Alexsandro-souza'
+                            target='black'>
+                                <img style={{width: '25px', height: '25px'}} src={github} alt='logo do github'/>
+                            </Link>
+                        </WrapperSocial>
+                        <WrapperSocial color='rgb(37, 158, 1)'>
+                            <Link href='https://web.whatsapp.com/send?phone=%7B+5587998039425%7D'
+                            target='black'>
+                                <img style={{width: '25px', height: '25px'}} src={whatsapp} alt='logo do whatsapp'/>
+                            </Link>
+                        </WrapperSocial>
                     </Wrapper>
                 </LabelColor>
                 <ContainerForm action="https://formsubmit.co/alexsandrosouza.contato@gmail.com" method="POST">
@@ -147,7 +166,7 @@ const Form = ()=>{
                         <Input type='email' name='email' placeholder='Email...' onChange={handleChangeEmail}/>
                     </WrapperForm>                    
                     <TextArea name='message' placeholder='Digite sua mensagem...' onChange={handleChangeMessage}/>
-                    <Buttom onClick={handleClick} type='submit'>Enviar</Buttom>
+                    <Buttom onFocus={handleClick} type='submit'>Enviar</Buttom>
                     
 
                 </ContainerForm>

@@ -82,7 +82,7 @@ const Skill : React.FC = ()=>{
 
     return(
         <>
-        <Skills>
+        <Skills id='Skill'>
             <TitleSingle>Habilidades</TitleSingle>
             <WapperContainer>
                 <Wrapper>

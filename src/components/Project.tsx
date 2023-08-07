@@ -3,22 +3,24 @@ import github from '../../public/github.svg';
 import Deploy from '../../public/Deploy.svg';
 
 const Projects = styled.section`
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     margin-top: 15%;
     max-width: 100%;
     background-color: rgb(2, 132, 199);
+    height: 500px;
 
 `
 const Container = styled.div`
     display: flex;
     max-width: 1000px;
-    margin: 0 auto 40px auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 2%;
+    align-self: center;
     padding: 0 2%;
 `
 const Wrapper = styled.div`
-    margin-bottom: 5%;
+    margin-top: 5%;
     padding: 5px 5px 0 5px;
     border-radius: 3%;
     background-color: white;
@@ -77,8 +79,8 @@ const Project : React.FC = ()=>{
 
     return(
         <>
-        <Projects>            
-            <TitleSingle>Projetos</TitleSingle>
+        <Projects >            
+            <TitleSingle id='Projects'>Projetos</TitleSingle>
             <Container>
                 <Wrapper>
                     <ImgProject>

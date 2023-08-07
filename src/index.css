@@ -10,3 +10,7 @@
   vertical-align: baseline; 
   list-style: none; 
 }
+
+html{
+  scroll-behavior: smooth;
+}
