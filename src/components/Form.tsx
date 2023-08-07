@@ -83,10 +83,33 @@ const Buttom = styled.button`
     cursor: pointer;
 
 `
+let email = false;
+let name = false;
+let message = false;
+
+
+const handleChangeEmail = (e: { target: { value: string; }; })=>{email = Boolean(e.target.value)}
+const handleChangeName = (e: { target: { value: string; }; })=>{name = Boolean(e.target.value)}
+const handleChangeMessage = (e: { target: { value: string; }; })=>{message = Boolean(e.target.value)}
+
+
+const handleClick = (e: { preventDefault: () => void; })=>{
+    e.preventDefault();
+    if(!email && !name && !message){
+        alert('Todos os campos estão vazios')
+    }else if(!email){
+        alert('O campo email está vazio')
+    }else if(!name){
+        alert('O campo nome está vazio')
+    }else if(!message){
+        alert('O campo mensagem está vazio')
+    }
+    
+    
+}
 
 
 const Form = ()=>{
-
 
     return(
         <>
@@ -111,17 +134,20 @@ const Form = ()=>{
                         </Link>
                     </Wrapper>
                 </LabelColor>
-                <ContainerForm>
+                <ContainerForm action="https://formsubmit.co/alexsandrosouza.contato@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://localhost:5173"/>
+                    <input type="hidden" name="_captcha" value="false"/>
+                    <input type="hidden" name="_template" value="table"/>
                     <WrapperForm>
                         <Label>Seu nome</Label>
-                        <Input type='text' placeholder='Como posso chama-lo?'/>
+                        <Input type='text' name='name' placeholder='Como posso chama-lo?' onChange={handleChangeName}/>
                     </WrapperForm>
                     <WrapperForm>
                         <Label>Seu email</Label>
-                        <Input type='text' placeholder='Email...'/>
+                        <Input type='email' name='email' placeholder='Email...' onChange={handleChangeEmail}/>
                     </WrapperForm>                    
-                    <TextArea placeholder='Digite sua mensagem...'/>
-                    <Buttom type='submit'>Enviar</Buttom>
+                    <TextArea name='message' placeholder='Digite sua mensagem...' onChange={handleChangeMessage}/>
+                    <Buttom onClick={handleClick} type='submit'>Enviar</Buttom>
                     
 
                 </ContainerForm>
