@@ -4,8 +4,8 @@ import {Webmaster, ReactCurso, JavaScriptCurso, TypeScript} from '../assets/img/
 
 
 interface InterfaceProps{
-    direction ?:number;
-    imgCourse : string;
+    direction ?:number,
+    imgCourse ?: string,
 }
 
 const CertificateSection = styled.section`
@@ -20,7 +20,7 @@ const CertificateSection = styled.section`
 const ContainerCertificate = styled.div<InterfaceProps>`
     position: relative;
     display: flex;
-    flex-direction: ${props=>props.direction?'row-reverse':'row'};
+    flex-direction: ${({direction})=>direction?'row-reverse':'row'};
     max-width: 100%;
     height: auto;
     padding: 0 2%;
@@ -48,7 +48,7 @@ const WrapperImgCourse = styled.div<InterfaceProps>`
     width: 100%;
     height: 250px;
     margin: 1% auto 0 auto;
-    background-image: url(${props => props.imgCourse});
+    background-image: url(${({imgCourse}) =>imgCourse});
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

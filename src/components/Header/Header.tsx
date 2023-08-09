@@ -1,5 +1,6 @@
 import logo from '../../../public/logo.svg';
 import Navigate from './Nav';
+import SideBar from './SideBar';
 import styled from 'styled-components';
 
 const Menu = styled.div`
@@ -14,9 +15,8 @@ const Menu = styled.div`
         margin-left: 20px;
     }
 
-    @media(max-width: 750px){
-        /* criar side bar */
-    }
+
+  
 
 
 `;
@@ -31,6 +31,11 @@ const Logo = styled.div`
     border-radius: 100%;
     align-self: center;
     background-color: #17181b;
+
+    @media(max-width: 601px){
+        border: 1px solid white;
+        margin-left: 0;
+    }
 `
 
 const Header : React.FC = ()=>{
@@ -41,6 +46,7 @@ const Header : React.FC = ()=>{
             <Menu id='Header'>
                 <Logo/>
                 <Navigate/>
+                <SideBar/>
             </Menu>
         </>
     )

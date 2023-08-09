@@ -27,6 +27,10 @@ const Centralizer = styled.div`
   @media(max-width: 980px){
       min-height: 80vh;
     }
+  
+    @media(max-width: 980px){
+      min-height: 95vh;
+    }
 `;
 
 

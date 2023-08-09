@@ -30,6 +30,10 @@ const Title = styled.h1`
     color: #00B894;
     font-family: 'Playfair Display', serif;
 
+    @media(max-width: 340px){
+        font-size: 2.75rem;
+    }
+
 `;
 
 const Text = styled.p`

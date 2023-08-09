@@ -3,10 +3,20 @@ import styled from 'styled-components';
 const Nav = styled.nav`
     align-self: flex-end;
     margin-bottom: 3px;
+    min-width: 230px;
+
+    @media(max-width: 600px){
+        display: none;
+    }
 `
 const Ul = styled.ul`
     display: flex;
     gap: 13px;
+    flex-wrap: wrap;
+
+    @media(max-width: 306px){
+        gap: 5px;
+    }
 `;
 const List = styled.li`
     :hover {
