@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import html from '../assets/tech/html.png';
 import BallCanvas from './Icons/balls/balls';
 import { useState } from 'react';
 import {
@@ -34,6 +33,10 @@ const Container = styled.div<{Visible: number}>`
     height: ${props=>props.Visible === 0? `auto`:`450px`};
     overflow: ${props=>props.Visible === 0? `visible`:`hidden`};
 
+    @media(max-width: 882px){
+        height: ${props=>props.Visible === 0? `auto`:`420px`};
+    }
+
 `;
 
 const Wrapper =styled.div`
@@ -41,10 +44,11 @@ const Wrapper =styled.div`
     flex-direction: column;
     gap: 5%;
     max-width: 55%;
+    margin-left: 15px;
 
       @media(max-width: 880px){
         margin: 0 auto;
-        
+        max-width: 95%;        
     }
     
 
@@ -69,7 +73,6 @@ const WrapperContainerImg = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    background-color: red;
 
 `;
 const WrapperImg =styled.div`
@@ -113,8 +116,15 @@ const Span = styled.span`
     cursor: pointer;
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 30px;
     font-weight: bold;
     font-style: italic;
+    color: #a19d9d;
+
+    @media(max-width: 1000px){
+        margin-left: 15px;
+
+  }
 
 `;
 

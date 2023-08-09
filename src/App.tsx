@@ -64,14 +64,8 @@ const App : React.FC = ()=>{
       </main>
       <Div>
         <Navigate/>           
-      </Div>
-      
+      </Div>      
       <Blockquote>© 2023 Alexsandro Souza Dev. Todos os direitos reservados.</Blockquote>  
-      
-      
-
-
-
     </ContainerMain>
     </>
   )

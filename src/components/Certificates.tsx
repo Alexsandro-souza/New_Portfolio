@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import danki from '../assets/img/Danki-Code.png';
-import {Webmaster, ReactCurso, JavaScriptCurso} from '../assets/img/index';
+import {Webmaster, ReactCurso, JavaScriptCurso, TypeScript} from '../assets/img/index';
 
 
 interface InterfaceProps{
@@ -163,9 +163,9 @@ const Certificate : React.FC = ()=>{
 
             <ContainerCertificate direction={1}>
                 <WrapperCertificate>
-                    <WrapperImgCourse imgCourse={ReactCurso}/>
+                    <WrapperImgCourse imgCourse={TypeScript}/>
                     <WrapperText>
-                        <TitleCourse>Curso exemlo</TitleCourse>    
+                        <TitleCourse>TypeScript</TitleCourse>    
                     </WrapperText>                   
                 </WrapperCertificate>
                 <VerticalLine>

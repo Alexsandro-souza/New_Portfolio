@@ -9,7 +9,6 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css'
 import { ProjectsSlider } from './Date';
-// import Background from '../ImgBackground';
 
 const Projects = styled.section`
     display: flex;
@@ -18,16 +17,17 @@ const Projects = styled.section`
     margin-top: 15%;
     max-width: 100%;
     background-color: rgb(2, 132, 199);
-    height: 500px;
+    height: 450px;
+    
 
 `
 const Container = styled.div`
     display: flex;
     position: relative;
     max-width: 1000px;
-    gap: 2%;
     align-self: center;
     padding: 0 2%;
+    margin-top: 25px;
 `;
     
 
@@ -84,6 +84,7 @@ const Links = styled.a`
 const Select = styled.p`
     margin-top: 10px;
 `;
+
 const Project : React.FC = ()=>{
     const[slides, setSlides] = useState(3);
 
@@ -94,10 +95,18 @@ const Project : React.FC = ()=>{
             }else if(window.innerWidth <= 539){
                 setSlides(1)
             }
-        }
-        
+        }    
 
+        if(window.innerWidth <= 539){
+            setSlides(1)
+        }
+    
+        
         window.addEventListener('resize', handleResize)
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, [])
 
     return(
@@ -109,10 +118,8 @@ const Project : React.FC = ()=>{
                     modules={[Navigation, Pagination]}
                     slidesPerView={slides}
                     pagination={{ clickable: true }}
-
                     navigation
-                    spaceBetween={30}
-    
+                    spaceBetween={30}    
                 >
                     {ProjectsSlider.map((item, index)=>(
 

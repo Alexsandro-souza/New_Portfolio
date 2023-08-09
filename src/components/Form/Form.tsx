@@ -63,9 +63,9 @@ const Link = styled.a`
 `
 const Wrapper = styled.div`
     display: flex;
-    max-width: 100%;
+    width: 150px;
     justify-content: space-between;
-    margin: 5%;
+    margin: 3% auto 8% auto;
     align-self: center;
 
     
@@ -164,24 +164,24 @@ const Form = ()=>{
                     <Title>Email para contato</Title>
                     <Text style={{fontWeight: 'bold'}}>alexsandrosouza.contato@gmail.com</Text>
                     <Text style={{marginTop: '10px'}}>Me adicione nas redes abaixo!</Text>
-                    <Text style={{marginTop: '10px', fontStyle:'italic'}}>Cada linha de código é uma oportunidade de criar algo incrível. Mal posso esperar para colaborar no seu próximo projeto!</Text>
+                    <Text style={{fontStyle:'italic'}}>Cada linha de código é uma oportunidade de criar algo incrível. Mal posso esperar para colaborar no seu próximo projeto!</Text>
                     <Wrapper>
                         <WrapperSocial color='rgb(94, 158, 190)'>
                             <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
                             target='black'>
-                                <img style={{width: '25px', height: '25px'}} src={linkedin} alt='logo do linkedin'/>
+                                <img style={{width: '15px', height: '15px'}} src={linkedin} alt='logo do linkedin'/>
                             </Link>
                         </WrapperSocial>
                         <WrapperSocial>
                             <Link href='https://github.com/Alexsandro-souza'
                             target='black'>
-                                <img style={{width: '25px', height: '25px'}} src={github} alt='logo do github'/>
+                                <img style={{width: '15px', height: '15px'}} src={github} alt='logo do github'/>
                             </Link>
                         </WrapperSocial>
                         <WrapperSocial color='rgb(37, 158, 1)'>
                             <Link href='https://web.whatsapp.com/send?phone=%7B+5587998039425%7D'
                             target='black'>
-                                <img style={{width: '25px', height: '25px'}} src={whatsapp} alt='logo do whatsapp'/>
+                                <img style={{width: '15px', height: '15px'}} src={whatsapp} alt='logo do whatsapp'/>
                             </Link>
                         </WrapperSocial>
                     </Wrapper>

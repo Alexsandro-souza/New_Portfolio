@@ -32,15 +32,27 @@
     }
   }
 
-  @media screen and (max-width: 350px){
+  @media screen and (max-width: 470px){
+    .swiper,  .swiper-wrapper  {
+        width: 306px;
+      }
+  }
+
+  @media screen and (max-width: 318px){
     .swiper,  .swiper-wrapper  {
         width: 276px;
       }
   }
 
-  @media screen and (max-width: 280px){
+  @media screen and (max-width: 294px){
     .swiper,  .swiper-wrapper  {
-        width: 250px;
+        width: 230px;
+      }
+  }
+
+  @media screen and (max-width: 244px){
+    .swiper,  .swiper-wrapper  {
+        width: 200px;
       }
   }
   
