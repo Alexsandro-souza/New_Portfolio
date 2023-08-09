@@ -52,7 +52,6 @@ const ImgCertificate = styled.div<{img?:string}>`
     
 `;
 const TitleSingle = styled.h2`
-    width: 100%;
     text-align: center;
     font-size: 1.6rem;
     font-family: 'Playfair Display',serif;

@@ -12,9 +12,16 @@ const ContainerSection = styled.section`
     `;
 
 const LabelColor = styled.div`
+    display: flex;
+    flex-direction: column;
     height: auto;
     width: 30%;
     background-color: rgb(2, 132, 199);
+
+    @media(max-width: 830px){
+        width: 80%;
+        margin: 0 auto;
+    }
 
 `
 const WrapperSocial = styled.div<{color?: string}>`
@@ -27,8 +34,13 @@ const WrapperSocial = styled.div<{color?: string}>`
 const Container = styled.div`
     display: flex;
     margin-top: 40px;
-    height: 500px;
+    height: auto;
     border: 1px solid;
+
+    @media(max-width: 830px){
+        flex-direction: column;
+        border: 0;
+    }
 
 `;
 
@@ -43,6 +55,7 @@ const Text = styled.p`
     color: white;
     padding: 2% ;
     font-family: 'Roboto', serif;
+    word-wrap: break-word;
 `;
 
 const Link = styled.a`
@@ -50,18 +63,26 @@ const Link = styled.a`
 `
 const Wrapper = styled.div`
     display: flex;
-    justify-content: space-around;
-    width: 50%;
-    margin: 5% auto;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 5%;
+    align-self: center;
+
     
 `;
-const ContainerForm = styled.form`
+const ContainerForm = styled.div`
     width: 50%;
     margin-top: 50px;
 
+     @media(max-width: 830px){
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid;
+    }
+
 `
 const WrapperForm = styled.div`
-    margin-left: 50px;
+    margin-left: 5%;
     margin-bottom: 30px;    
 `
 const Label = styled.label`
@@ -80,9 +101,8 @@ const Input = styled.input`
 
 const TextArea = styled.textarea`
     height: 150px;
-    width: 100%;
+    width: 95%;
     resize: none;
-    margin-left: 50px;
     padding: 2%;
     border: 1px solid;
     outline: none;
@@ -92,7 +112,7 @@ const TextArea = styled.textarea`
 const Buttom = styled.button`
     background-color: rgb(85, 202, 128);
     padding: 8px;
-    margin: 20px 0 0 98%;
+    margin-top: 20px;
     border-radius: 15%;
     color: white;
     cursor: pointer;
@@ -134,9 +154,7 @@ const Form = ()=>{
             return () => clearTimeout(timer);
         } 
     }
-    // const handleClick = ()=>{
-        
-    // }
+
 
     return(
         <>
@@ -144,9 +162,9 @@ const Form = ()=>{
             <Container>
                 <LabelColor>
                     <Title>Email para contato</Title>
-                    <Text style={{textDecoration: 'underline'}}>alexsandrosouza.contato@gmail.com</Text>
-                    <Text style={{marginTop: '40px'}}>Me adicione nas redes abaixo!</Text>
-                    <Text style={{marginTop: '10px'}}>Cada linha de código é uma oportunidade de criar algo incrível. Mal posso esperar para colaborar no seu próximo projeto!</Text>
+                    <Text style={{fontWeight: 'bold'}}>alexsandrosouza.contato@gmail.com</Text>
+                    <Text style={{marginTop: '10px'}}>Me adicione nas redes abaixo!</Text>
+                    <Text style={{marginTop: '10px', fontStyle:'italic'}}>Cada linha de código é uma oportunidade de criar algo incrível. Mal posso esperar para colaborar no seu próximo projeto!</Text>
                     <Wrapper>
                         <WrapperSocial color='rgb(94, 158, 190)'>
                             <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
@@ -168,20 +186,24 @@ const Form = ()=>{
                         </WrapperSocial>
                     </Wrapper>
                 </LabelColor>
-                <ContainerForm action="https://formsubmit.co/alexsandrosouza.contato@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="http://localhost:5173/"/>
-                    <input type="hidden" name="_captcha" value="false"/>
-                    <input type="hidden" name="_template" value="table"/>
-                    <WrapperForm>
-                        <Label>Seu nome</Label>
-                        <Input type='text' name='name' placeholder='Como posso chama-lo?' onChange={handleChangeName}/>
-                    </WrapperForm>
-                    <WrapperForm>
-                        <Label>Seu email</Label>
-                        <Input type='email' name='email' placeholder='Email...' onChange={handleChangeEmail}/>
-                    </WrapperForm>                    
-                    <TextArea name='message' placeholder='Digite sua mensagem...' onChange={handleChangeMessage}/>
-                    <Buttom onFocus={handleFocus} type='submit'>Enviar</Buttom>
+                <ContainerForm>
+                    <form action="https://formsubmit.co/alexsandrosouza.contato@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="http://localhost:5173/"/>
+                        <input type="hidden" name="_captcha" value="false"/>
+                        <input type="hidden" name="_template" value="table"/>
+                        <WrapperForm style={{marginTop:'10px'}}>
+                            <Label>Seu nome</Label>
+                            <Input type='text' name='name' placeholder='Como posso chama-lo?' onChange={handleChangeName}/>
+                        </WrapperForm>
+                        <WrapperForm>
+                            <Label>Seu email</Label>
+                            <Input type='email' name='email' placeholder='Email...' onChange={handleChangeEmail}/>
+                        </WrapperForm>
+                        <WrapperForm>                   
+                            <TextArea name='message' placeholder='Digite sua mensagem...' onChange={handleChangeMessage}/>
+                            <Buttom onFocus={handleFocus} type='submit'>Enviar</Buttom>
+                        </WrapperForm>
+                    </form>
                 </ContainerForm>
             </Container>
             <Message duration={showMessage ? 1 : 0}/>

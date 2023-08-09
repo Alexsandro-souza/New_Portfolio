@@ -1,12 +1,21 @@
 import styled from 'styled-components';
-import React from '../../public/React.svg';
-import Less from '../../public/Less.svg';
-import Sass from '../../public/Sass.svg';
-import TypeScript from '../../public/TypeScript.svg';
-import Figma from '../../public/Figma.svg';
-import StyledComponents from '../../public/StyledComponents.svg';
-import ThreeTec from '../../public/ThreeTec.svg';
+// import html from '../assets/tech/html.png';
+import BallCanvas from './Icons/balls/balls';
 import { useState } from 'react';
+import {
+    javascript,
+    typescript,
+    html,
+    css,
+    reactjs,
+    nodejs,
+    mongodb,
+    git,
+    figma,
+    styledComponents,
+    Sass,
+    Less
+  } from "../assets/tech/index";
 
 const Skills = styled.section`
     margin: 5% auto 0 auto;
@@ -33,27 +42,43 @@ const Wrapper =styled.div`
     gap: 5%;
     max-width: 55%;
 
+      @media(max-width: 880px){
+        margin: 0 auto;
+        
+    }
+    
+
 `;
 const WapperContainer = styled.div`
   display  : flex;
   min-width: 100%;
   justify-content: space-between;
   margin-bottom: 5%;
+
+  @media(max-width: 880px){
+    flex-direction: column;
+
+  }
+
 `;
 
 const WrapperContainerImg = styled.div`
-    min-width: 250px;
-    margin: 0 auto;
+    position: relative;
+    min-width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: red;
 
 `;
 const WrapperImg =styled.div`
     display: flex;
-    gap: 25px;
     justify-content: center;
     align-items: center;
-    padding: 2% 2%;
-
-
+    width: 100%;
+    height: auto;        
+    transition: all;
 `;
 
 const TitleSingle = styled.h2`
@@ -71,7 +96,7 @@ const Title = styled.h3`
     font-size: 1.2rem;
     font-family: 'Roboto', serif;
     font-style: italic;
-    color: #FFC300;
+    color: #00B894;
 
 `;
 
@@ -91,6 +116,16 @@ const Span = styled.span`
     font-weight: bold;
     font-style: italic;
 
+`;
+
+const Div = styled.div`
+    position: absolute;
+    width: 100%;
+
+    @media(max-width: 550px){
+        position: static;
+
+  }
 `
 
 
@@ -113,9 +148,13 @@ const Skill : React.FC = ()=>{
                         <Text>São as principais tecnologias usadas na criação de páginas e aplicativos web. Cada uma delas desempenha um papel específico na construção e estilização das interfaces e no comportamento interativo. As duas primeiras são linguagem de marcação e estilo respectivamente, e o javascript é uma linguagem muito poderosa e alto nível, o que torna o aprendizado mais leve. Essas três tecnologias, HTML, CSS e JavaScript, trabalhando em conjunto, criam uma experiência interativa e envolvente para os usuários em páginas e aplicativos web modernos.</Text>
                     </Wrapper>
                     <WrapperContainerImg>
-                        <WrapperImg>
-                            <img style={{width: '60%', height:'80%'}} src={ThreeTec}/>
+                        <WrapperImg>                       
+                            <BallCanvas icon={html}/>
+                            <BallCanvas icon={css}/>                            
                         </WrapperImg>
+                        <Div>
+                            <BallCanvas icon={javascript}/>
+                        </Div>
                     </WrapperContainerImg>
                 </WapperContainer>    
                 <WapperContainer>
@@ -126,8 +165,8 @@ const Skill : React.FC = ()=>{
                     </Wrapper>
                     <WrapperContainerImg>
                         <WrapperImg>
-                            <img style={{width: '40%', height:'80%'}} src={Less}/>
-                            <img style={{width: '40%', height:'80%'}} src={Sass}/>
+                            <BallCanvas icon={Sass}/>
+                            <BallCanvas icon={Less}/>
                         </WrapperImg>
                     </WrapperContainerImg>
                     
@@ -141,7 +180,8 @@ const Skill : React.FC = ()=>{
                     </Wrapper>
                     <WrapperContainerImg>
                         <WrapperImg>
-                            <img style={{width: '40%', height:'80%'}} src={TypeScript}/>
+                            <BallCanvas icon={typescript}/>
+
                         </WrapperImg>
                     </WrapperContainerImg>
                 </WapperContainer>
@@ -152,7 +192,8 @@ const Skill : React.FC = ()=>{
                     </Wrapper>   
                     <WrapperContainerImg>
                         <WrapperImg>
-                            <img style={{width: '60%', height:'80%'}} src={StyledComponents}/>
+                            <BallCanvas icon={styledComponents}/>
+
                         </WrapperImg>
                     </WrapperContainerImg>
                 </WapperContainer>
@@ -163,7 +204,8 @@ const Skill : React.FC = ()=>{
                     </Wrapper>
                     <WrapperContainerImg>
                         <WrapperImg>
-                            <img style={{width: '40%', height:'80%'}} src={React}/>
+                            <BallCanvas icon={reactjs}/>
+
                         </WrapperImg>
                     </WrapperContainerImg>
                 </WapperContainer>
@@ -174,7 +216,18 @@ const Skill : React.FC = ()=>{
                     </Wrapper>
                     <WrapperContainerImg>
                         <WrapperImg>
-                            <img style={{maxWidth: '200px', height:'80%'}} src={Figma}/>
+                            <BallCanvas icon={figma}/>
+                        </WrapperImg>
+                    </WrapperContainerImg>
+                </WapperContainer>
+                <WapperContainer>
+                    <Wrapper>
+                        <Title>Git e GitHub</Title>
+                        <Text>Como desenvolvedor, mesmo sem ser um designer profissional, possuo conhecimento em Figma. Essa habilidade facilita para uma solução de projeto mais elegante e precisa. A combinação de habilidades em desenvolvimento e noções básicas de design me torna mais versátil e apto a contribuir de forma mais completa para o sucesso dos projetos digitais. Estou comprometido em continuar aprendendo e aprimorando minhas habilidades para alcançar resultados excepcionais.</Text>
+                    </Wrapper>
+                    <WrapperContainerImg>
+                        <WrapperImg>
+                            <BallCanvas icon={git}/>
                         </WrapperImg>
                     </WrapperContainerImg>
                 </WapperContainer>
@@ -182,9 +235,25 @@ const Skill : React.FC = ()=>{
                 <Wrapper>
                     <Title>Estudando...</Title>
                     <ul>
-                        <List>NodeJs</List>
-                        <List>MySql</List>
-                        <List>MongoDB</List>
+                        <List>                            
+                            <WrapperImg style={{width:'100px', height:'80px'}}>
+                                NodeJs
+                                <BallCanvas icon={nodejs}/>
+                            </WrapperImg>
+
+                        </List>
+                        <List>                        
+                            <WrapperImg style={{width:'100px', height:'80px'}}>
+                                MySql
+                               <BallCanvas icon={mongodb}/>
+                            </WrapperImg>                            
+                        </List>
+                        <List>
+                            <WrapperImg style={{width:'110px', height:'80px', gap:'10px'}}>
+                                MongoDB
+                               <BallCanvas icon={mongodb}/>
+                           </WrapperImg>
+                        </List>
                     </ul>
                 </Wrapper>
             </Container>

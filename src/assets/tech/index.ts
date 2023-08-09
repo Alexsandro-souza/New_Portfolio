@@ -8,6 +8,9 @@ import nodejs from './nodejs.png';
 import mongodb from './mongodb.png';
 import git from './git.png';
 import figma from './figma.png';
+import styledComponents from './styledComponents.png';
+import Sass from './Sass.png';
+import Less from './Less.png'
 
 export {
   javascript,
@@ -19,4 +22,7 @@ export {
   mongodb,
   git,
   figma,
+  styledComponents,
+  Sass,
+  Less
 };

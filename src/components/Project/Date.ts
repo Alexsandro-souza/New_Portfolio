@@ -15,5 +15,7 @@ export const ProjectsSlider : typesProjects = [
     {Title : 'Rastreador correios', Text : 'Texto para teste de portfolio, o que está escrito aqui é ilustrativo.',
     Image : '***', Github : 'https://', Deploy : '*****'},
     {Title : 'Portfólio', Text : 'Texto para teste de portfolio, o que está escrito aqui é ilustrativo.',
-    Image : '***', Github : 'https://', Deploy : '*****'}
+    Image : '***', Github : 'https://', Deploy : '*****'},
+    {Title : 'Carrinho de compras', Text : 'Texto para teste de portfolio, o que está escrito aqui é ilustrativo.',
+    Image : '***', Github : 'https://', Deploy : 'https://aula-alexsandro-souza.vercel.app/'}
 ]

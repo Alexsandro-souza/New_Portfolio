@@ -4,9 +4,9 @@ import Header from './components/Header/Header';
 import Call from './components/Call';
 import Background from "./components/ImgBackground";
 import Skill from './components/Skills';
-import Projects from './components/Project';
+import Projects from './components/Project/Project';
 import Certificate from './components/Certificates';
-import Form from './components/Form';
+import Form from './components/Form/Form';
 import Navigate from "./components/Header/Nav";
 
 // type Props={
@@ -40,9 +40,6 @@ const Div = styled.div`
     justify-content: space-around;
     margin-top: 30px;
     align-items: center;
-    
-    
-
 `
 
 
