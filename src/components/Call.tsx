@@ -30,6 +30,7 @@ const Title = styled.h1`
     color: #00B894;
     font-family: 'Playfair Display', serif;
 
+
     @media(max-width: 340px){
         font-size: 2.75rem;
     }
@@ -59,15 +60,15 @@ const Call : React.FC = ()=>{
         <Wraper>
             <Title>Alexsandro Souza</Title>
             <Text style={{fontSize:'1.75rem'}}>Desenvolvedor Web</Text>
-            <Text style={{marginTop:'10px'}}>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</Text>
+            <Text style={{marginTop:'10px', marginBottom: '30px'}}>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</Text>
             <SocialMedia>
-                <WrapperSocial color='rgb(94, 158, 190)'>
+                <WrapperSocial color='rgb(37, 158, 1)'>
                     <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
                     target='black'>
                         <img style={{width: '25px', height: '25px'}} src={linkedin} alt='logo do linkedin'/>
                     </Link>
                 </WrapperSocial>
-                <WrapperSocial>
+                <WrapperSocial color='rgb(37, 158, 1)'>
                     <Link href='https://github.com/Alexsandro-souza'
                     target='black'>
                         <img style={{width: '25px', height: '25px'}} src={github} alt='logo do github'/>

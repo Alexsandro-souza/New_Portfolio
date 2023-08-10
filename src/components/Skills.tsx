@@ -13,7 +13,8 @@ import {
     figma,
     styledComponents,
     Sass,
-    Less
+    Less,
+    MySql
   } from "../assets/tech/index";
 
 const Skills = styled.section`
@@ -56,7 +57,6 @@ const Wrapper =styled.div`
 const WapperContainer = styled.div`
   display  : flex;
   min-width: 100%;
-  justify-content: space-between;
   margin-bottom: 5%;
 
   @media(max-width: 880px){
@@ -68,19 +68,21 @@ const WapperContainer = styled.div`
 
 const WrapperContainerImg = styled.div`
     position: relative;
+    margin: 0 auto;
     min-width: 80px;
+    height: 100px;  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    align-self: center;
 
 `;
 const WrapperImg =styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;        
+    width: 100px;
+    height: 100px;        
     transition: all;
 `;
 
@@ -128,15 +130,7 @@ const Span = styled.span`
 
 `;
 
-const Div = styled.div`
-    position: absolute;
-    width: 100%;
 
-    @media(max-width: 550px){
-        position: static;
-
-  }
-`
 
 
 const Skill : React.FC = ()=>{
@@ -151,6 +145,7 @@ const Skill : React.FC = ()=>{
         <>
         <Skills  id='Skill'>
             <Container Visible={visible? 1: 0}>
+            
                 <TitleSingle>Habilidades</TitleSingle>
                 <WapperContainer>
                     <Wrapper>
@@ -158,24 +153,27 @@ const Skill : React.FC = ()=>{
                         <Text>São as principais tecnologias usadas na criação de páginas e aplicativos web. Cada uma delas desempenha um papel específico na construção e estilização das interfaces e no comportamento interativo. As duas primeiras são linguagem de marcação e estilo respectivamente, e o javascript é uma linguagem muito poderosa e alto nível, o que torna o aprendizado mais leve. Essas três tecnologias, HTML, CSS e JavaScript, trabalhando em conjunto, criam uma experiência interativa e envolvente para os usuários em páginas e aplicativos web modernos.</Text>
                     </Wrapper>
                     <WrapperContainerImg>
-                        <WrapperImg>                       
+                        <WrapperImg>
                             <BallCanvas icon={html}/>
-                            <BallCanvas icon={css}/>                            
+                        </WrapperImg>       
+                        <WrapperImg>
+                            <BallCanvas icon={css}/> 
                         </WrapperImg>
-                        <Div>
+                        <WrapperImg>
                             <BallCanvas icon={javascript}/>
-                        </Div>
+                        </WrapperImg>
                     </WrapperContainerImg>
                 </WapperContainer>    
                 <WapperContainer>
                     <Wrapper>
                         <Title>Sass e Less</Title>
                         <Text>O Sass (Syntactically Awesome Style Sheets) e o Less (Leaner CSS) são pré-processadores de CSS que estendem a funcionalidade do CSS tradicional, trazendo diversas facilidades e vantagens para a estilização de páginas web. Quando conheci esses pré-processadores me familiarizei mais com o Less. Ambos têm o objetivo de tornar o processo de escrita de estilos mais eficiente e organizado.</Text>
-                        
                     </Wrapper>
                     <WrapperContainerImg>
                         <WrapperImg>
                             <BallCanvas icon={Sass}/>
+                        </WrapperImg>
+                        <WrapperImg>
                             <BallCanvas icon={Less}/>
                         </WrapperImg>
                     </WrapperContainerImg>
@@ -191,7 +189,6 @@ const Skill : React.FC = ()=>{
                     <WrapperContainerImg>
                         <WrapperImg>
                             <BallCanvas icon={typescript}/>
-
                         </WrapperImg>
                     </WrapperContainerImg>
                 </WapperContainer>
@@ -255,7 +252,7 @@ const Skill : React.FC = ()=>{
                         <List>                        
                             <WrapperImg style={{width:'100px', height:'80px'}}>
                                 MySql
-                               <BallCanvas icon={mongodb}/>
+                               <BallCanvas icon={MySql}/>
                             </WrapperImg>                            
                         </List>
                         <List>

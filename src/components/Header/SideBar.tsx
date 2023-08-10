@@ -6,6 +6,7 @@ import menu from  '../../assets/img/menu.svg';
 const MenuLine = styled.div`
     position: relative;
     align-self: center;
+    margin-right: 10px;
     height: 30px;
     width: 30px;
     cursor: pointer;

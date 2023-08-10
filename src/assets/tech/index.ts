@@ -11,6 +11,7 @@ import figma from './figma.png';
 import styledComponents from './styledComponents.png';
 import Sass from './Sass.png';
 import Less from './Less.png'
+import MySql from './MySql.png'
 
 export {
   javascript,
@@ -24,5 +25,6 @@ export {
   figma,
   styledComponents,
   Sass,
-  Less
+  Less,
+  MySql
 };
