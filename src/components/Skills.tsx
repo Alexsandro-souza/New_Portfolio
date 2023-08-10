@@ -70,11 +70,17 @@ const WrapperContainerImg = styled.div`
     position: relative;
     margin: 0 auto;
     min-width: 80px;
-    height: 100px;  
+    height: auto;  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
+
+    @media(max-width: 880px){
+       
+
+  }
+       
 
 `;
 const WrapperImg =styled.div`
@@ -84,6 +90,24 @@ const WrapperImg =styled.div`
     width: 100px;
     height: 100px;        
     transition: all;
+
+    @media(max-width: 880px){
+        display: none;
+
+  }
+`;
+
+const WrapperImgSingle =styled.div`
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    display: none;
+
+    @media(max-width: 880px){
+        display: flex;
+        margin-top: 20px;
+    }
 `;
 
 const TitleSingle = styled.h2`
@@ -129,6 +153,12 @@ const Span = styled.span`
   }
 
 `;
+const Img =styled.img`
+    width: 50%;
+    height: 50%;
+`;
+
+
 
 
 
@@ -155,13 +185,22 @@ const Skill : React.FC = ()=>{
                     <WrapperContainerImg>
                         <WrapperImg>
                             <BallCanvas icon={html}/>
-                        </WrapperImg>       
+                        </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={html}/>
+                        </WrapperImgSingle>
                         <WrapperImg>
                             <BallCanvas icon={css}/> 
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={css}/>
+                        </WrapperImgSingle>
                         <WrapperImg>
                             <BallCanvas icon={javascript}/>
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={javascript}/>
+                        </WrapperImgSingle>
                     </WrapperContainerImg>
                 </WapperContainer>    
                 <WapperContainer>
@@ -173,9 +212,15 @@ const Skill : React.FC = ()=>{
                         <WrapperImg>
                             <BallCanvas icon={Sass}/>
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={Sass}/>
+                        </WrapperImgSingle>
                         <WrapperImg>
                             <BallCanvas icon={Less}/>
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={Less}/>
+                        </WrapperImgSingle>
                     </WrapperContainerImg>
                     
                 </WapperContainer>
@@ -190,6 +235,9 @@ const Skill : React.FC = ()=>{
                         <WrapperImg>
                             <BallCanvas icon={typescript}/>
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={typescript}/>
+                        </WrapperImgSingle>
                     </WrapperContainerImg>
                 </WapperContainer>
                 <WapperContainer>
@@ -200,8 +248,10 @@ const Skill : React.FC = ()=>{
                     <WrapperContainerImg>
                         <WrapperImg>
                             <BallCanvas icon={styledComponents}/>
-
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={styledComponents}/>
+                        </WrapperImgSingle>
                     </WrapperContainerImg>
                 </WapperContainer>
                 <WapperContainer>
@@ -212,8 +262,10 @@ const Skill : React.FC = ()=>{
                     <WrapperContainerImg>
                         <WrapperImg>
                             <BallCanvas icon={reactjs}/>
-
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={reactjs}/>
+                        </WrapperImgSingle>
                     </WrapperContainerImg>
                 </WapperContainer>
                 <WapperContainer>
@@ -225,6 +277,9 @@ const Skill : React.FC = ()=>{
                         <WrapperImg>
                             <BallCanvas icon={figma}/>
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={figma}/>
+                        </WrapperImgSingle>
                     </WrapperContainerImg>
                 </WapperContainer>
                 <WapperContainer>
@@ -236,6 +291,9 @@ const Skill : React.FC = ()=>{
                         <WrapperImg>
                             <BallCanvas icon={git}/>
                         </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={git}/>
+                        </WrapperImgSingle>
                     </WrapperContainerImg>
                 </WapperContainer>
                     

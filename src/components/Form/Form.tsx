@@ -19,7 +19,7 @@ const LabelColor = styled.div`
     background-color: rgb(2, 132, 199);
 
     @media(max-width: 830px){
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -75,7 +75,7 @@ const ContainerForm = styled.div`
     margin-top: 50px;
 
      @media(max-width: 830px){
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         border: 1px solid;
     }
@@ -166,13 +166,13 @@ const Form = ()=>{
                     <Text style={{marginTop: '10px'}}>Me adicione nas redes abaixo!</Text>
                     <Text style={{fontStyle:'italic'}}>Cada linha de código é uma oportunidade de criar algo incrível. Mal posso esperar para colaborar no seu próximo projeto!</Text>
                     <Wrapper>
-                        <WrapperSocial color='rgb(94, 158, 190)'>
+                        <WrapperSocial color='rgb(37, 158, 1)'>
                             <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
                             target='black'>
                                 <img style={{width: '15px', height: '15px'}} src={linkedin} alt='logo do linkedin'/>
                             </Link>
-                        </WrapperSocial>
-                        <WrapperSocial>
+                        </WrapperSocial >
+                        <WrapperSocial color='rgb(37, 158, 1)'>
                             <Link href='https://github.com/Alexsandro-souza'
                             target='black'>
                                 <img style={{width: '15px', height: '15px'}} src={github} alt='logo do github'/>
