@@ -2,13 +2,16 @@ import styled from 'styled-components';
 import './ProjectCss.css'
 import github from '../../../public/github.svg';
 import Deploy from '../../../public/Deploy.svg';
+import Version from '../../../public/Version.svg';
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css'
-import { ProjectsSlider } from './Date';
+import { ProjectsSlider, ImgSlider } from './Date';
+
+
 
 const Projects = styled.section`
     display: flex;
@@ -17,7 +20,7 @@ const Projects = styled.section`
     margin-top: 15%;
     max-width: 100%;
     background-color: rgb(2, 132, 199);
-    height: 450px;
+    height: 520px;
     
 
 `
@@ -27,16 +30,19 @@ const Container = styled.div`
     max-width: 1000px;
     align-self: center;
     padding: 0 2%;
-    margin-top: 25px;
+    margin-top: 15px;
 `;
     
 
 const ImgProject = styled.div`
-    height: 150px;
+    height: 180px;
     max-width: 95%;
     padding: 10px;
     border-radius: 3%;
     margin: 10px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   
     
 `;
@@ -58,7 +64,8 @@ const TitleProject = styled.h3`
     font-style: italic;
     font-family: 'Roboto',serif;
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 
 `;
 
@@ -72,7 +79,7 @@ const TextProject = styled.p`
 
 const WrapperLinks = styled.div`
     display: flex;
-    margin: 20px 5px;
+    margin: 20px 5px 30px 5px;
     gap: 5%;
     justify-content: center;
 `;
@@ -82,7 +89,6 @@ const Links = styled.a`
 `;
 
 const Select = styled.p`
-    margin-top: 10px;
 `;
 
 const Project : React.FC = ()=>{
@@ -123,21 +129,21 @@ const Project : React.FC = ()=>{
                 >
                     {ProjectsSlider.map((item, index)=>(
 
-                        <SwiperSlide key={index} style={{backgroundColor: 'white', borderRadius:'3%', minHeight:'150px'}} >
-                            
-                                <ImgProject>
-                                    {item.Image}
-                                </ImgProject>
+                        <SwiperSlide key={index} style={{backgroundColor: 'white', borderRadius:'3%', minHeight:'150px'}} >                            
+                                <ImgProject style={{ backgroundImage: `url(${ImgSlider[index]})`}}/>
                                 <TitleProject>{item.Title}</TitleProject>
                                 <TextProject>{item.Text}</TextProject>
                                 <WrapperLinks>
                                     <Links href={item.Github} target='blanck'>
-                                        <img style={{width: '25px', height: '25px'}} src={github} alt='logo do github'/>
+                                        <img style={{width: '20px', height: '20px',display:'block', margin:'0 auto'}} src={github} alt='logo do github'/>
+                                        <p style={{color:'black'}}>GitHub</p>
                                     </Links>
                                     <Links href={item.Deploy} target='blanck'>
-                                        <img style={{width: '25px', height: '25px'}} src={Deploy} alt='imagem de computador'/>
+                                        <img style={{width: '20px', height: '20px',display:'block', margin:'0 auto'}} src={Deploy} alt='imagem de computador'/>
+                                        <p style={{color:'black'}}>Deploy</p>
                                     </Links>
                                     <Select>
+                                        <img style={{width: '20px', height: '20px',display:'block', margin:'0 auto'}} src={Version} alt='ícone de atualização'/>
                                         Versão 1.0
                                     </Select>                   
                                 </WrapperLinks>

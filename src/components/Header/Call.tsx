@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import github from '../../public/github.svg';
-import whatsapp from '../../public/whatsapp.svg';
-import linkedin from '../../public/linkedin.svg';
+import github from '../../../public/github.svg';
+import whatsapp from '../../../public/whatsapp.svg';
+import linkedin from '../../../public/linkedin.svg';
 
 const Wraper = styled.div`
     display: flex;

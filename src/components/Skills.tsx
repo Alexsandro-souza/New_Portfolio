@@ -36,6 +36,7 @@ const Container = styled.div<{Visible: number}>`
 
     @media(max-width: 882px){
         height: ${props=>props.Visible === 0? `auto`:`420px`};
+        overflow: ${props=>props.Visible === 0? `visible`:`hidden`};
     }
 
 `;

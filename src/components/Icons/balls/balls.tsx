@@ -8,7 +8,7 @@ import {
   useTexture,
 } from "@react-three/drei";
 
-import CanvasLoader from "../../Loader";
+import CanvasLoader from "../../others/Loader";
 
 interface BallProps {
     imgUrl: string;

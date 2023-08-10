@@ -1,17 +1,15 @@
 import React from "react";
 import styled from 'styled-components';
 import Header from './components/Header/Header';
-import Call from './components/Call';
-import Background from "./components/ImgBackground";
+import Call from './components/Header/Call';
+import Background from "./components/Header/ImgBackground";
 import Skill from './components/Skills';
 import Projects from './components/Project/Project';
 import Certificate from './components/Certificates';
 import Form from './components/Form/Form';
 import Navigate from "./components/Header/Nav";
 
-// type Props={
-//   children: ReactNode,
-// }
+
 const ContainerMain = styled.div`
   width: auto;
   
