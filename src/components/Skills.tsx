@@ -161,9 +161,6 @@ const Img =styled.img`
 
 
 
-
-
-
 const Skill : React.FC = ()=>{
     const [visible, setVisible] = useState(true);
     const [text, setText] = useState('Ver mais...');
@@ -183,26 +180,27 @@ const Skill : React.FC = ()=>{
                         <Title>HTML, Css e JavaScript</Title>
                         <Text>São as principais tecnologias usadas na criação de páginas e aplicativos web. Cada uma delas desempenha um papel específico na construção e estilização das interfaces e no comportamento interativo. As duas primeiras são linguagem de marcação e estilo respectivamente, e o javascript é uma linguagem muito poderosa e alto nível, o que torna o aprendizado mais leve. Essas três tecnologias, HTML, CSS e JavaScript, trabalhando em conjunto, criam uma experiência interativa e envolvente para os usuários em páginas e aplicativos web modernos.</Text>
                     </Wrapper>
-                    <WrapperContainerImg>
-                        <WrapperImg>
-                            <BallCanvas icon={html}/>
-                        </WrapperImg>
-                        <WrapperImgSingle>
-                            <Img src={html} alt='Imagem HTML'/>
-                        </WrapperImgSingle>
-                        <WrapperImg>
-                            <BallCanvas icon={css}/> 
-                        </WrapperImg>
-                        <WrapperImgSingle>
-                            <Img src={css} alt='Imagem Css'/>
-                        </WrapperImgSingle>
-                        <WrapperImg>
-                            <BallCanvas icon={javascript}/>
-                        </WrapperImg>
-                        <WrapperImgSingle>
-                            <Img src={javascript} alt='Imagem javascript'/>
-                        </WrapperImgSingle>
-                    </WrapperContainerImg>
+                        <WrapperContainerImg>                        
+                            <WrapperImg>
+                                <BallCanvas icon={html}/>
+                            </WrapperImg>
+                        
+                            <WrapperImgSingle>
+                                <Img src={html} alt='Imagem HTML'/>
+                            </WrapperImgSingle>
+                            <WrapperImg>
+                                <BallCanvas icon={css}/> 
+                            </WrapperImg>
+                            <WrapperImgSingle>
+                                <Img src={css} alt='Imagem Css'/>
+                            </WrapperImgSingle>
+                            <WrapperImg>
+                                <BallCanvas icon={javascript}/>
+                            </WrapperImg>
+                            <WrapperImgSingle>
+                                <Img src={javascript} alt='Imagem javascript'/>
+                            </WrapperImgSingle>                        
+                        </WrapperContainerImg>
                 </WapperContainer>    
                 <WapperContainer>
                     <Wrapper>
