@@ -1,17 +1,17 @@
 
-import javascript from './javascript.png';
-import typescript from './typescript.png';
-import html from './html.png';
-import css from './css.png';
-import reactjs from './reactjs.png';
-import nodejs from './nodejs.png';
-import mongodb from './mongodb.png';
-import git from './git.png';
-import figma from './figma.png';
-import styledComponents from './styledComponents.png';
-import Sass from './Sass.png';
-import Less from './Less.png'
-import MySql from './MySql.png'
+import javascript from './javascript.webp';
+import typescript from './typescript.webp';
+import html from './html.webp';
+import css from './css.webp';
+import reactjs from './reactjs.webp';
+import nodejs from './nodejs.webp';
+import mongodb from './mongodb.webp';
+import git from './git.webp';
+import figma from './figma.webp';
+import styledComponents from './styledComponents.webp';
+import Sass from './Sass.webp';
+import Less from './Less.webp'
+import MySql from './MySql.webp'
 
 export {
   javascript,

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import danki from '../assets/img/Danki-Code.png';
+import danki from '../assets/img/Danki-Code.webp';
 import {Webmaster, ReactCurso, JavaScriptCurso, TypeScript} from '../assets/img/index';
 
 

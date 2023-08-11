@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Polygon from '../others/polygon';
-import ImgCode from '../../assets/img/Coding.jpg';
+import ImgCode from '../../assets/img/Coding.webp';
 
 const Wrapper = styled.div`
     position: absolute;
