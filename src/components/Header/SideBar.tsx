@@ -63,7 +63,7 @@ const SideBar = ()=>{
     
     return(
     <MenuLine onClick={handleClick}>
-        <Img src={hide ? close : menu}/>
+        <Img src={hide ? close : menu} alt={hide ? 'Icone close' : 'Icone menu'}/>
         <Nav display={hide}>
             <Ul>
                 <List>
