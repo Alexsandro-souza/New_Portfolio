@@ -18,6 +18,10 @@ const Wrapper = styled.div`
         background-color: rgb(2, 132, 199);
     }
 
+    /* @media(max-width: 500px){
+        display: none;
+    } */
+
 
 `;
 

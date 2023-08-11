@@ -27,6 +27,10 @@ const Skills = styled.section`
         border-top: 0;
         
     }
+    
+    @media(max-width: 500px){
+        margin-top: 10%;
+    }
 
 `;
 
@@ -36,7 +40,6 @@ const Container = styled.div<{Visible: number}>`
 
     @media(max-width: 882px){
         height: ${props=>props.Visible === 0? `auto`:`420px`};
-        overflow: ${props=>props.Visible === 0? `visible`:`hidden`};
     }
 
 `;
@@ -70,6 +73,7 @@ const WapperContainer = styled.div`
 const WrapperContainerImg = styled.div`
     position: relative;
     margin: 0 auto;
+    margin-top: 5px;
     min-width: 80px;
     height: auto;  
     display: flex;
@@ -77,10 +81,7 @@ const WrapperContainerImg = styled.div`
     justify-content: center;
     align-self: center;
 
-    @media(max-width: 880px){
-       
 
-  }
        
 
 `;
@@ -96,6 +97,15 @@ const WrapperImg =styled.div`
         display: none;
 
   }
+`;
+
+const WrapperImgstudying =styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;        
+    transition: all;
 `;
 
 const WrapperImgSingle =styled.div`
@@ -183,8 +193,7 @@ const Skill : React.FC = ()=>{
                         <WrapperContainerImg>                        
                             <WrapperImg>
                                 <BallCanvas icon={html}/>
-                            </WrapperImg>
-                        
+                            </WrapperImg>                        
                             <WrapperImgSingle>
                                 <Img src={html} alt='Imagem HTML'/>
                             </WrapperImgSingle>
@@ -201,7 +210,7 @@ const Skill : React.FC = ()=>{
                                 <Img src={javascript} alt='Imagem javascript'/>
                             </WrapperImgSingle>                        
                         </WrapperContainerImg>
-                </WapperContainer>    
+                </WapperContainer>
                 <WapperContainer>
                     <Wrapper>
                         <Title>Sass e Less</Title>
@@ -296,27 +305,29 @@ const Skill : React.FC = ()=>{
                     </WrapperContainerImg>
                 </WapperContainer>
                     
+
+                    
                 <Wrapper>
                     <Title>Estudando...</Title>
                     <ul>
                         <List>                            
-                            <WrapperImg style={{width:'100px', height:'80px'}}>
+                            <WrapperImgstudying>
                                 NodeJs
                                 <BallCanvas icon={nodejs}/>
-                            </WrapperImg>
+                            </WrapperImgstudying>
 
                         </List>
                         <List>                        
-                            <WrapperImg style={{width:'100px', height:'80px'}}>
+                            <WrapperImgstudying>
                                 MySql
                                <BallCanvas icon={MySql}/>
-                            </WrapperImg>                            
+                            </WrapperImgstudying>                            
                         </List>
                         <List>
-                            <WrapperImg style={{width:'110px', height:'80px', gap:'10px'}}>
+                            <WrapperImgstudying style={{width:'110px', height:'80px', gap:'10px'}}>
                                 MongoDB
                                <BallCanvas icon={mongodb}/>
-                           </WrapperImg>
+                           </WrapperImgstudying>
                         </List>
                     </ul>
                 </Wrapper>

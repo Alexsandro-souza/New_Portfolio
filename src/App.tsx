@@ -1,5 +1,5 @@
 import React, { lazy, Suspense} from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 const Header = lazy(()=>import("./components/Header/Header")) ;
 const Call = lazy(()=>import("./components/Header/Call")) ;
 const Background = lazy(()=>import("./components/Header/ImgBackground")) ;
@@ -22,13 +22,6 @@ const Centralizer = styled.div`
   margin: 0 auto;
   min-height: 100vh;
 
-  @media (max-width: 980px) {
-    min-height: 80vh;
-  }
-
-  @media (max-width: 980px) {
-    min-height: 95vh;
-  }
 `;
 
 const Blockquote = styled.blockquote`
@@ -44,30 +37,43 @@ const Div = styled.div`
   align-items: center;
 `;
 
-const Loading  = styled.p`
-  display: block;
+const fadeEffect = keyframes `
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+`;
+
+const Loading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  font-size: 2.5rem;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 2rem;
   color: #00B894;
-  margin: auto auto;
-
-
-`
+  animation: ${fadeEffect} 2s infinite;
+`;
 
 const App: React.FC = () => {
 
 
   return (
-    <>
+    <>      
       <ContainerMain>
-        <Suspense fallback={<Loading>Loading ...</Loading>}>
+        
           <header>
             <Centralizer>
               <Header />
               <Call/>
             </Centralizer>
           </header>
+        <Suspense fallback={<Loading>Loading ...</Loading>}>
           <Background />
+        </Suspense>
           <main>
             <Skill />
             <Projects />
@@ -77,11 +83,12 @@ const App: React.FC = () => {
           <Div>
             <Navigate />
           </Div>
-        </Suspense>
+       
         <Blockquote>
           © 2023 Alexsandro Souza Dev. Todos os direitos reservados.
-        </Blockquote>
+        </Blockquote>      
       </ContainerMain>
+      <Loading>Loading ...</Loading>
     </>
   );
 };
