@@ -44,7 +44,7 @@ const Navigate = ()=>{
                 </Links>
             </List>
             <List>
-                <Links href='/'>
+                <Links href='#About'>
                     Sobre min
                 </Links>
             </List>

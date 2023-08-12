@@ -3,16 +3,14 @@ import Polygon from '../others/polygon';
 import ImgCode from '../../assets/img/Coding.webp';
 
 const Wrapper = styled.div`
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    background-color: rgb(40, 43, 44); 
     height: 100vh;
-    width: 45%;
+    width: 150%;
 
     @media(max-width: 980px){
-        position: relative;
+        position: absolute;
         width: 100%;
+        bottom: -100%;
         margin: 0 auto;
         height: 550px;
         background-color: rgb(2, 132, 199);
@@ -32,7 +30,6 @@ const Img = styled.div`
     height: 100%;
 
     @media(max-width: 980px){
-        padding:0;
         height: 95%;
         width: 95%;
         margin: 0 auto;

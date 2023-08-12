@@ -1,5 +1,6 @@
 import React, { lazy, Suspense} from "react";
 import styled, { keyframes } from "styled-components";
+import About from "./components/About";
 const Header = lazy(()=>import("./components/Header/Header")) ;
 const Call = lazy(()=>import("./components/Header/Call")) ;
 const Background = lazy(()=>import("./components/Header/ImgBackground")) ;
@@ -58,23 +59,32 @@ const Loading = styled.div`
   animation: ${fadeEffect} 2s infinite;
 `;
 
+const Head = styled.header`
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: yellow;
+`
+
 const App: React.FC = () => {
 
 
   return (
     <>      
-      <ContainerMain>
-        
-          <header>
+      <ContainerMain>        
+          <Head>
+            <Suspense fallback={<Loading>Loading ...</Loading>}>
+              <Background />
+            </Suspense>
             <Centralizer>
               <Header />
               <Call/>
             </Centralizer>
-          </header>
-        <Suspense fallback={<Loading>Loading ...</Loading>}>
-          <Background />
-        </Suspense>
+          </Head>
+      
           <main>
+            <About/>
             <Skill />
             <Projects />
             <Certificate />
@@ -88,7 +98,6 @@ const App: React.FC = () => {
           © 2023 Alexsandro Souza Dev. Todos os direitos reservados.
         </Blockquote>      
       </ContainerMain>
-      <Loading>Loading ...</Loading>
     </>
   );
 };

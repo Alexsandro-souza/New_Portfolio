@@ -2,17 +2,44 @@ import styled from 'styled-components';
 
 const Svg = styled.svg`
     position: absolute;
-    right: 42.8%;
+    right: 42.3%;
     top: 0;
-    width: 7rem;
+    width: 17rem;
     height: 100vh;
     border: none;
     color: white;
 
   
 
-    @media(max-width: 1440px){
+    @media(max-width: 1420px){
         right: 41%;
+        
+    }
+
+    @media(max-width: 1320px){
+        right: 38.8%;
+        
+    }
+
+    @media(max-width: 1245px){
+        right: 36.5%;
+        
+    }
+    @media(max-width: 1169px){
+        right: 34.5%;
+        
+    }
+
+    @media(max-width: 1106px){
+        right: 32.5%;
+        
+    }
+    @media(max-width: 1046px){
+        right: 30.5%;
+        
+    }
+    @media(max-width: 992px){
+        right: 28.5%;
         
     }
     @media(max-width: 980px){

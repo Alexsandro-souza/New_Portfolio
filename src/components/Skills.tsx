@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import BallCanvas from './Icons/balls/balls';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import {
     javascript,
     typescript,
@@ -174,15 +174,22 @@ const Img =styled.img`
 const Skill : React.FC = ()=>{
     const [visible, setVisible] = useState(true);
     const [text, setText] = useState('Ver mais...');
+    const contentRef = useRef<HTMLDivElement | null>(null);
 
     const handleClick = ()=>{
         setVisible(!visible)
-        !visible ? setText('Ver mais...'):setText('Ver menos...')
+        !visible ? setText('Ver mais...'):setText('Ver menos...');
+        
+        if (contentRef.current) {
+            if (visible === false) {
+                contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });                
+            }
+        }
     }
     return(
         <>
         <Skills  id='Skill'>
-            <Container Visible={visible? 1: 0}>
+            <Container Visible={visible? 1: 0} ref={contentRef}>
             
                 <TitleSingle>Habilidades</TitleSingle>
                 <WapperContainer>

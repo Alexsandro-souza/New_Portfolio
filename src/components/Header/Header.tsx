@@ -4,7 +4,7 @@ import SideBar from './SideBar';
 import styled from 'styled-components';
 
 const Menu = styled.div`
-    max-width: 50%;
+    max-width: 95%;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;

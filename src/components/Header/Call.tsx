@@ -6,7 +6,8 @@ import linkedin from '../../../public/linkedin.svg';
 const Wraper = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    min-width: 95%;
+    padding: 2%;
     margin-top: 10%;
     gap: 5px;
     
@@ -38,7 +39,6 @@ const Title = styled.h1`
 `;
 
 const Text = styled.p`
-    
     font-family: 'Roboto', serif;
 `;
 const Link = styled.a`
@@ -60,7 +60,7 @@ const Call : React.FC = ()=>{
         <Wraper>
             <Title>Alexsandro Souza</Title>
             <Text style={{fontSize:'1.75rem'}}>Desenvolvedor Web</Text>
-            <Text style={{marginTop:'10px', marginBottom: '30px'}}>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</Text>
+            <Text style={{marginTop:'10px', marginBottom: '30px',width: '85%'}}>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</Text>
             <SocialMedia>
                 <WrapperSocial color='rgb(37, 158, 1)'>
                     <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
