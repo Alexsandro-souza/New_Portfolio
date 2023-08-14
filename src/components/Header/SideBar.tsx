@@ -24,7 +24,7 @@ const Nav = styled.nav<{display:boolean}>`
     min-width: 130px;
     min-height: 150px;
     display: ${props=>props.display? 'block': 'none'};
-    background: #0ac9a3;
+    background: #ffffff;
     border: 1px solid;
     border-radius: 10%;
     
@@ -43,7 +43,7 @@ const List = styled.li`
 const Links = styled.a`
     color: #3a372d;
     text-decoration: none;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
     font-size: 1rem;
     font-weight: 600;
   

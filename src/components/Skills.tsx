@@ -18,7 +18,7 @@ import {
   } from "../assets/tech/index";
 
 const Skills = styled.section`
-    margin: 5% auto 0 auto;
+    margin: 0 auto;
     max-width: 1000px;
     border-top: 3px solid #1B8E99;
     
@@ -26,10 +26,6 @@ const Skills = styled.section`
     @media(max-width: 980px){
         border-top: 0;
         
-    }
-    
-    @media(max-width: 500px){
-        margin-top: 10%;
     }
 
 `;
@@ -47,7 +43,7 @@ const Container = styled.div<{Visible: number}>`
 const Wrapper =styled.div`
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 5px;
     max-width: 55%;
     margin-left: 15px;
 
@@ -125,8 +121,8 @@ const TitleSingle = styled.h2`
     display: flex;
     justify-content: space-around;
     font-size: 1.6rem;
-    margin: 20px 0 40px;
-    font-family: 'Playfair Display', serif;
+    margin: 10px 0 30px;
+    font-family: 'Carlito', serif;
     font-weight: 450;
     color: #00B894;
 
@@ -134,7 +130,7 @@ const TitleSingle = styled.h2`
 
 const Title = styled.h3`
     font-size: 1.2rem;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
     font-style: italic;
     color: #00B894;
 
@@ -142,7 +138,7 @@ const Title = styled.h3`
 
 const Text = styled.p`
     flex: 1;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
 `;
 
 const List = styled.li`
@@ -157,13 +153,10 @@ const Span = styled.span`
     font-weight: bold;
     font-style: italic;
     color: #a19d9d;
-
-    @media(max-width: 1000px){
-        margin-left: 15px;
-
-  }
-
+    margin-left: 28px;
 `;
+
+
 const Img =styled.img`
     width: 50%;
     height: 50%;

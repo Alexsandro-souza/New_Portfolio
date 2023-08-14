@@ -4,7 +4,7 @@ import SideBar from './SideBar';
 import styled from 'styled-components';
 
 const Menu = styled.div`
-    max-width: 95%;
+    max-width: 50%;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -36,6 +36,14 @@ const Logo = styled.div`
         border: 1px solid white;
         margin-left: 0;
     }
+`;
+
+const Wrapper = styled.div`
+    align-self: flex-end;
+    @media(max-width: 600px){
+        display: none;
+    }
+
 `
 
 const Header : React.FC = ()=>{
@@ -45,7 +53,9 @@ const Header : React.FC = ()=>{
         <>
             <Menu id='Header'>
                 <Logo/>
-                <Navigate/>
+                <Wrapper>
+                    <Navigate/>
+                </Wrapper>
                 <SideBar/>
             </Menu>
         </>

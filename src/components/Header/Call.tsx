@@ -29,7 +29,7 @@ const SocialMedia = styled.div`
 const Title = styled.h1`
     font-size: 3.75rem;
     color: #00B894;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Carlito', serif;
 
 
     @media(max-width: 340px){
@@ -39,7 +39,20 @@ const Title = styled.h1`
 `;
 
 const Text = styled.p`
-    font-family: 'Roboto', serif;
+   font-family: 'Carlito', serif;
+    font-size: 1.75rem;
+`;
+
+const TextSigle = styled.p`
+   font-family: 'Carlito', serif;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 40%;
+
+
+    @media(max-width: 980px){
+       width: 85%
+    }
 `;
 const Link = styled.a`
     text-decoration: none;
@@ -59,8 +72,8 @@ const Call : React.FC = ()=>{
         <>
         <Wraper>
             <Title>Alexsandro Souza</Title>
-            <Text style={{fontSize:'1.75rem'}}>Desenvolvedor Web</Text>
-            <Text style={{marginTop:'10px', marginBottom: '30px',width: '85%'}}>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</Text>
+            <Text>Desenvolvedor Web</Text>
+            <TextSigle>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</TextSigle>
             <SocialMedia>
                 <WrapperSocial color='rgb(37, 158, 1)'>
                     <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'

@@ -28,14 +28,13 @@ const Centralizer = styled.div`
 const Blockquote = styled.blockquote`
   margin: 20px 0 20px 0;
   text-align: center;
-  font-family: "Roboto", serif;
+  font-family: 'Carlito', serif;
 `;
 
 const Div = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
-  align-items: center;
 `;
 
 const fadeEffect = keyframes `
@@ -59,30 +58,22 @@ const Loading = styled.div`
   animation: ${fadeEffect} 2s infinite;
 `;
 
-const Head = styled.header`
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: yellow;
-`
-
 const App: React.FC = () => {
 
 
   return (
     <>      
-      <ContainerMain>        
-          <Head>
-            <Suspense fallback={<Loading>Loading ...</Loading>}>
-              <Background />
-            </Suspense>
+      <ContainerMain>
+        
+          <header>
             <Centralizer>
               <Header />
               <Call/>
             </Centralizer>
-          </Head>
-      
+          </header>
+        <Suspense fallback={<Loading>Loading ...</Loading>}>
+          <Background />
+        </Suspense>
           <main>
             <About/>
             <Skill />

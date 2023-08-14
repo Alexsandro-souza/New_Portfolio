@@ -48,13 +48,13 @@ const Title = styled.h3`
     color: white;
     margin: 10% 0 0 0;
     padding-left: 2% ;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
 `;
 
 const Text = styled.p`
     color: white;
     padding: 2% ;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
     word-wrap: break-word;
 `;
 
@@ -88,7 +88,7 @@ const WrapperForm = styled.div`
 const Label = styled.label`
     display: inline-block;
     padding-bottom: 2%;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
 `;
 
 const Input = styled.input`
@@ -166,19 +166,19 @@ const Form = ()=>{
                     <Text style={{marginTop: '10px'}}>Me adicione nas redes abaixo!</Text>
                     <Text style={{fontStyle:'italic'}}>Cada linha de código é uma oportunidade de criar algo incrível. Mal posso esperar para colaborar no seu próximo projeto!</Text>
                     <Wrapper>
-                        <WrapperSocial color='rgb(37, 158, 1)'>
+                        <WrapperSocial color='white'>
                             <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
                             target='black'>
                                 <img style={{width: '15px', height: '15px'}} src={linkedin} alt='logo do linkedin'/>
                             </Link>
                         </WrapperSocial >
-                        <WrapperSocial color='rgb(37, 158, 1)'>
+                        <WrapperSocial color='white'>
                             <Link href='https://github.com/Alexsandro-souza'
                             target='black'>
                                 <img style={{width: '15px', height: '15px'}} src={github} alt='logo do github'/>
                             </Link>
                         </WrapperSocial>
-                        <WrapperSocial color='rgb(37, 158, 1)'>
+                        <WrapperSocial color='white'>
                             <Link href='https://web.whatsapp.com/send?phone=%7B+5587998039425%7D'
                             target='black'>
                                 <img style={{width: '15px', height: '15px'}} src={whatsapp} alt='logo do whatsapp'/>

@@ -4,11 +4,8 @@ const Nav = styled.nav`
     align-self: flex-end;
     margin-bottom: 3px;
     min-width: 230px;
+`;
 
-    @media(max-width: 600px){
-        display: none;
-    }
-`
 const Ul = styled.ul`
     display: flex;
     gap: 13px;
@@ -26,9 +23,13 @@ const List = styled.li`
 const Links = styled.a`
     color: #3a372d;
     text-decoration: none;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
     font-size: 1rem;
     font-weight: 600;
+
+    @media(max-width: 600px){
+        font-size: 0.8rem;
+    }
   
 `
 

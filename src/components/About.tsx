@@ -32,7 +32,7 @@ const TitleSingle = styled.h2`
     justify-content: space-around;
     font-size: 1.6rem;
     margin: 20px 0 40px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Carlito', serif;
     font-weight: 450;
     color: #00B894;
 
@@ -40,7 +40,7 @@ const TitleSingle = styled.h2`
 
 const Text = styled.p`
     flex: 1;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
 `;
 
 const Span = styled.span`
@@ -51,11 +51,7 @@ const Span = styled.span`
     font-weight: bold;
     font-style: italic;
     color: #a19d9d;
-
-    @media(max-width: 1000px){
-        margin-left: 15px;
-
-  }
+    margin-left: 28px;
 
 `;
 
@@ -63,16 +59,11 @@ const Wrapper =styled.div`
     display: flex;
     flex-direction: column;
     gap: 5%;
-    max-width: 55%;
-    margin-left: 15px;
-
-      @media(max-width: 880px){
-        margin: 0 auto;
-        max-width: 95%;        
-    }
-    
+    margin: 0 auto;
+    max-width: 95%;    
 
 `;
+
 
 const About: React.FC = ()=>{
     const [visible, setVisible] = useState(true);

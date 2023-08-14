@@ -94,7 +94,7 @@ const ImgCertificate = styled.div<{img?:string}>`
 const TitleSingle = styled.h2`
     text-align: center;
     font-size: 1.6rem;
-    font-family: 'Playfair Display',serif;
+    font-family: 'Carlito', serif;
     font-weight: 450;
     color: #00B894;
     margin: 30px;
@@ -113,7 +113,7 @@ const WrapperText = styled.div`
 `;
 
 const TitleCourse = styled.h3`
-    font-family: 'roboto',serif;
+    font-family: 'Carlito', serif;
     margin: 0 auto;
 `;
 

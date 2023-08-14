@@ -17,7 +17,7 @@ const Projects = styled.section`
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-top: 15%;
+    margin-top: 50px;
     max-width: 100%;
     background-color: rgb(2, 132, 199);
     height: 520px;
@@ -53,7 +53,7 @@ const TitleSingle = styled.h2`
     position: relative;
     top: -50px;
     font-size: 1.6rem;
-    font-family: 'Playfair Display',serif;
+    font-family: 'Carlito', serif;
     font-weight: 450;
     color: #00B894;
 `;
@@ -62,7 +62,7 @@ const TitleProject = styled.h3`
     text-align: center;
     color: #00B894;
     font-style: italic;
-    font-family: 'Roboto',serif;
+    font-family: 'Carlito', serif;
     font-size: 1.2rem;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -70,7 +70,7 @@ const TitleProject = styled.h3`
 `;
 
 const TextProject = styled.p`
-    font-family: 'Roboto',serif;
+    font-family: 'Carlito', serif;
     word-wrap: break-word;
     max-width: 95%;
     margin: 0 auto;

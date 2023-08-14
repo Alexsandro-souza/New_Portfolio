@@ -18,7 +18,7 @@ const MessageSucess = styled.div<{ display: number }>`
 
 const Text = styled.p`
     padding: 2%;
-    font-family: 'Roboto', serif;
+    font-family: 'Carlito', serif;
     color: white;
 `;
 

@@ -1,58 +1,57 @@
 :root {
-    --swiper-navigation-size: 20px;
+  --swiper-navigation-size: 20px;
 }
 
 @media screen and (max-width: 1024px) {
-    .swiper,  .swiper-wrapper  {
-      width: 800px;
-    }
+  .swiper,  .swiper-wrapper  {
+    width: 800px;
   }
-  
+}
+
 @media screen and (max-width: 850px) {
-    .swiper,  .swiper-wrapper  {
-      width: 576px;
-    }
+  .swiper,  .swiper-wrapper  {
+    width: 576px;
   }
+}
 
 @media screen and (max-width: 620px) {
-    .swiper,  .swiper-wrapper  {
-      width: 500px;
-    }
+  .swiper,  .swiper-wrapper  {
+    width: 500px;
   }
+}
 
 @media screen and (max-width: 540px) {
-    .swiper,  .swiper-wrapper  {
-      width: 456px;
+  .swiper,  .swiper-wrapper  {
+    width: 456px;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .swiper-button-prev, .swiper-button-next{
+      display: none !important;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .swiper,  .swiper-wrapper  {
+      width: 306px;
     }
-  }
+}
 
-  @media screen and (max-width: 539px) {
-    .swiper-button-prev, .swiper-button-next{
-        display: none !important;
+@media screen and (max-width: 318px){
+  .swiper,  .swiper-wrapper  {
+      width: 276px;
     }
-  }
+}
 
-  @media screen and (max-width: 470px){
-    .swiper,  .swiper-wrapper  {
-        width: 306px;
-      }
-  }
+@media screen and (max-width: 294px){
+  .swiper,  .swiper-wrapper  {
+      width: 230px;
+    }
+}
 
-  @media screen and (max-width: 318px){
-    .swiper,  .swiper-wrapper  {
-        width: 276px;
-      }
-  }
-
-  @media screen and (max-width: 294px){
-    .swiper,  .swiper-wrapper  {
-        width: 230px;
-      }
-  }
-
-  @media screen and (max-width: 244px){
-    .swiper,  .swiper-wrapper  {
-        width: 200px;
-      }
-  }
-  
+@media screen and (max-width: 244px){
+  .swiper,  .swiper-wrapper  {
+      width: 200px;
+    }
+}

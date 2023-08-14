@@ -3,22 +3,24 @@ import Polygon from '../others/polygon';
 import ImgCode from '../../assets/img/Coding.webp';
 
 const Wrapper = styled.div`
-    background-color: rgb(40, 43, 44); 
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
     height: 100vh;
-    width: 150%;
+    width: 45%;
 
     @media(max-width: 980px){
-        position: absolute;
+        position: relative;
         width: 100%;
-        bottom: -100%;
         margin: 0 auto;
         height: 550px;
         background-color: rgb(2, 132, 199);
     }
 
-    /* @media(max-width: 500px){
+    @media(max-width: 500px){
         display: none;
-    } */
+    }
 
 
 `;
@@ -30,6 +32,7 @@ const Img = styled.div`
     height: 100%;
 
     @media(max-width: 980px){
+        padding:0;
         height: 95%;
         width: 95%;
         margin: 0 auto;
