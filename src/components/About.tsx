@@ -93,12 +93,12 @@ const About: React.FC = ()=>{
                     </Wrapper>
                     <Wrapper>
                         <TitleSingle>Trajetória Profissional</TitleSingle>
-                        <Text>Trajetória Profissional
+                        <Text>
                             Minha trajetória profissional é marcada por uma progressão constante e conquistas significativas. Aos 18 anos, iniciei como jovem aprendiz em uma empresa agrícola. Minha dedicação e desempenho me renderam uma extensão do contrato como estagiário, onde minha sede de aprendizado e dedicação foram novamente reconhecidas. Embora a efetivação não tenha sido possível devido a restrições orçamentárias, minha reputação rendeu frutos. Uma empresa parceira reconheceu meu potencial e me acolheu como assistente administrativo.
 
-                            Minha capacidade de aprendizado acelerado me permitiu dominar a administração e, ao observar meus colegas de suporte técnico, percebi uma oportunidade de expansão. Assumi a função de operador de suporte técnico, progredindo posteriormente para técnico de campo, onde minha atuação na qualidade foi evidente. Tais conquistas resultaram em promoções sucessivas: de técnico auditor a supervisor de operações, liderando uma equipe de até 33 técnicos. Atualmente, ocupo a posição de Supervisor de Operações Sênior.
+                            Minha capacidade de aprendizado acelerado me permitiu dominar a administração e, ao observar meus colegas de suporte técnico, percebi uma oportunidade de expansão. Assumi a função de operador de suporte técnico, progredindo posteriormente para técnico de campo, onde minha atuação na qualidade foi evidente. Tais conquistas resultaram em promoções sucessivas: de técnico auditor a supervisor de operações, liderando uma equipe de até 33 técnicos.
 
-                            Minha jornada foi forjada a partir do foco inabalável que dedico a cada tarefa, meu comprometimento com resultados, minha confiabilidade e a resiliência para enfrentar desafios. Destaco que um hábito notável, o registro em áudio de todas as interações com clientes, demonstrou meu compromisso com a qualidade e atenção aos detalhes, sendo um diferencial reconhecido por superiores e colegas.
+                            Minha jornada foi forjada a partir do foco inabalável que dedico a cada tarefa, meu comprometimento com resultados, minha confiabilidade e a resiliência para enfrentar desafios.
                         </Text>
                     </Wrapper>
                     <Wrapper>
