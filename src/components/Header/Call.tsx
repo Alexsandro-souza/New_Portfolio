@@ -16,6 +16,10 @@ const Wraper = styled.div`
         min-width: 95%;
         align-self: center;
     }
+
+    @media(max-width: 600px){
+        margin-top: 15%;
+    }
 ` 
 ;
 

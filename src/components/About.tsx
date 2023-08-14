@@ -48,7 +48,6 @@ const Span = styled.span`
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 30px;
-    font-weight: bold;
     font-style: italic;
     color: #a19d9d;
     margin-left: 28px;
