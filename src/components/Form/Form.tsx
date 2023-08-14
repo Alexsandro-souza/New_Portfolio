@@ -188,7 +188,7 @@ const Form = ()=>{
                 </LabelColor>
                 <ContainerForm>
                     <form action="https://formsubmit.co/alexsandrosouza.contato@gmail.com" method="POST">
-                        <input type="hidden" name="_next" value="http://localhost:5173/"/>
+                        <input type="hidden" name="_next" value="https://new-portfolio-alexsandro-souza.vercel.app/"/>
                         <input type="hidden" name="_captcha" value="false"/>
                         <input type="hidden" name="_template" value="table"/>
                         <WrapperForm style={{marginTop:'10px'}}>
