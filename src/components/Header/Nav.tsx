@@ -46,7 +46,7 @@ const Navigate = ()=>{
             </List>
             <List>
                 <Links href='#About'>
-                    Sobre min
+                    Sobre mim
                 </Links>
             </List>
             <List>
