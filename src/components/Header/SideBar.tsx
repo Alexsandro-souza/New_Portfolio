@@ -73,7 +73,7 @@ const SideBar = ()=>{
                 </List>
                 <List>
                     <Links href='/'>
-                        Sobre min
+                        Sobre mim
                     </Links>
                 </List>
                 <List>
