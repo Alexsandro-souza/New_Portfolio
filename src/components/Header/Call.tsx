@@ -77,7 +77,7 @@ const Call : React.FC = ()=>{
         <Wraper>
             <Title>Alexsandro Souza</Title>
             <Text>Desenvolvedor Web</Text>
-            <TextSigle>Sou Alexsandro, um desenvolvedor web com uma experiência sólida em suporte técnico e atendimento ao cliente, atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</TextSigle>
+            <TextSigle>Sou desenvolvedor web com experiência sólida em suporte técnico e atendimento ao cliente. Atualmente em transição de carreira para a área de desenvolvimento. Busco uma oportunidade para aplicar minhas habilidades criativas, analíticas e de comunicação em uma equipe de desenvolvimento.</TextSigle>
             <SocialMedia>
                 <WrapperSocial color='rgb(37, 158, 1)'>
                     <Link href='https://www.linkedin.com/in/alexsandro-souza-79b76023b/'
