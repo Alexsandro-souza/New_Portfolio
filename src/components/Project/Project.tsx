@@ -59,8 +59,7 @@ const TitleSingle = styled.h2`
 `;
 
 const TitleProject = styled.h3`
-    text-align: center;
-    color: #00B894;
+    text-align: center;    
     font-style: italic;
     font-family: 'Carlito', serif;
     font-size: 1.2rem;
@@ -86,6 +85,8 @@ const WrapperLinks = styled.div`
 
 const Links = styled.a`
     text-decoration: none;
+    cursor: pointer;
+    color: #00B894;
 `;
 
 const Select = styled.p`
@@ -130,8 +131,14 @@ const Project : React.FC = ()=>{
                     {ProjectsSlider.map((item, index)=>(
 
                         <SwiperSlide key={index} style={{backgroundColor: 'white', borderRadius:'3%', minHeight:'150px'}} >                            
-                                <ImgProject style={{ backgroundImage: `url(${ImgSlider[index]})`}}/>
-                                <TitleProject>{item.Title}</TitleProject>
+                                <Links href={item.Deploy} target='blanck'>
+                                    <ImgProject style={{ backgroundImage: `url(${ImgSlider[index]})`}}/>
+                                </Links>
+                                <TitleProject>
+                                    <Links href={item.Deploy} target='blanck'>
+                                        {item.Title}
+                                    </Links>
+                                </TitleProject>
                                 <TextProject>{item.Text}</TextProject>
                                 <WrapperLinks>
                                     <Links href={item.Github} target='blanck'>

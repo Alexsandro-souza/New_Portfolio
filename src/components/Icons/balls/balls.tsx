@@ -18,13 +18,13 @@ const Ball: React.FC<BallProps>= (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float speed={5} rotationIntensity={1.1} floatIntensity={5}>
+    <Float speed={4} rotationIntensity={1.1} floatIntensity={5}>
       <ambientLight intensity={0.3} />
       <directionalLight position={[51, 40, 11.0]} />
       <mesh castShadow receiveShadow scale={1.5}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="#1B8E99"
+          color="#ffffff"
           polygonOffset
           polygonOffsetFactor={1}
           flatShading
