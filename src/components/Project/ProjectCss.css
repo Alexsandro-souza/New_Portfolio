@@ -2,11 +2,10 @@
   --swiper-navigation-size: 20px;
 }
 
-@media screen and (max-width: 1024px) {
-  .swiper,  .swiper-wrapper  {
+.swiper,  .swiper-wrapper  {
     width: 800px;
-  }
 }
+
 
 @media screen and (max-width: 850px) {
   .swiper,  .swiper-wrapper  {
