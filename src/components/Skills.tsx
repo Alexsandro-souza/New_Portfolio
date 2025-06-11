@@ -8,12 +8,9 @@ import {
     css,
     reactjs,
     nodejs,
-    mongodb,
     git,
     figma,
     styledComponents,
-    Sass,
-    Less,
     MySql
   } from "../assets/tech/index";
 
