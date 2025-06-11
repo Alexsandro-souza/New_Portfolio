@@ -1,4 +1,4 @@
-import logo from '../../../public/logo.svg';
+import logo from '../../../public/foto.png';
 import Navigate from './Nav';
 import SideBar from './SideBar';
 import styled from 'styled-components';
