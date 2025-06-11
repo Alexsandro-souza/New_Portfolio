@@ -264,7 +264,41 @@ const Skill : React.FC = ()=>{
                 <WapperContainer>
                     <Wrapper>
                         <Title>React</Title>
-                        <Text>React é significativo no desenvolvimento de aplicativos web modernos. Demorei um pouco para me familiarizar com alguns do seu atributos como Hooks, mas depois que aprendi meus projetos são feito muito mais rápidos do que utilizando apenas Html, Css e JavaScript, sem nenhum framework ou biblioteca. O React facilidades como componentização, virtual DOM, robusto, muito bem difundido.</Text>
+                        <Text>
+                            Usando React desenvolvi uma aplicação web robusta e escalável, 
+                            aproveitando ao máximo os recursos dessa ferramenta. Embora tenha 
+                            levado algum tempo para me familiarizar com alguns dos seus atributos, 
+                            como Hooks, uma vez que aprendi, meus projetos passaram a ser 
+                            desenvolvidos com muito mais rapidez e eficiência em comparação com o 
+                            desenvolvimento tradicional utilizando apenas HTML, CSS e JavaScript. 
+                            A plataforma web que desenvolvi é uma ferramenta valiosa para as oficinas 
+                            mecânicas, permitindo-lhes gerenciar suas operações de forma mais eficaz. 
+                            Você pode conferir o resultado final acessando o link: 
+                            <a href="https://oficinas.autocenterapp.com/" target="_blank">oficinas.autocenterapp.com</a>.
+                        </Text>
+                    </Wrapper>
+                    <WrapperContainerImg>
+                        <WrapperImg>
+                            <BallCanvas icon={reactjs}/>
+                        </WrapperImg>
+                        <WrapperImgSingle>
+                            <Img src={reactjs} alt='Imagem reactjs'/>
+                        </WrapperImgSingle>
+                    </WrapperContainerImg>
+                </WapperContainer>
+                <WapperContainer>
+                    <Wrapper>
+                        <Title>React native</Title>
+                        <Text>
+                            Minha experiência com React Native foi fundamental para implementar essas novas 
+                            features ao <a href="https://play.google.com/store/apps/details?id=com.autocenterapp" target="_blank"> app auto center</a>. 
+                            Uma das principais responsabilidades que tive foi desenvolver o programa de fidelidade do app, que permite aos clientes 
+                            acumular pontos e trocar por benefícios em postos de combustíveis. Além disso, trabalhei na listagem de peças de oficinas 
+                            conveniadas ao app, o que exigiu uma integração com APIs para obter os dados necessários. Também desenvolvi o cálculo de 
+                            viagens, que envolveu implementar lógica complexa para calcular os custos e benefícios de cada viagem. Durante o 
+                            desenvolvimento, precisei fazer ajustes no design do app para garantir que a experiência do usuário fosse atraente e 
+                            fácil de usar. Foi um desafio, mas consegui entregar as funcionalidades dentro do prazo e com qualidade.
+                        </Text>
                     </Wrapper>
                     <WrapperContainerImg>
                         <WrapperImg>
