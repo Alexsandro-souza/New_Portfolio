@@ -1,4 +1,4 @@
-import logo from '../../../public/foto.png';
+//import logo from '../../../public/foto.png';
 import Navigate from './Nav';
 import SideBar from './SideBar';
 import styled from 'styled-components';
@@ -21,7 +21,6 @@ const Menu = styled.div`
 
 `;
 const Logo = styled.div`
-    background-image: url(${logo});
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 30px;
@@ -30,12 +29,7 @@ const Logo = styled.div`
     width: 50px;
     border-radius: 100%;
     align-self: center;
-    background-color: #17181b;
-
-    @media(max-width: 601px){
-        border: 1px solid white;
-        margin-left: 0;
-    }
+    background-color: #ffff;
 `;
 
 const Wrapper = styled.div`
