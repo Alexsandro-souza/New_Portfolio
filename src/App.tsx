@@ -22,6 +22,10 @@ const Centralizer = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   min-height: 100vh;
+  
+  @media(max-width: 980px){
+    min-height: auto;
+  }
 
 `;
 
