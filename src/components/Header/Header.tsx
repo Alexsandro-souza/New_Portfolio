@@ -50,7 +50,6 @@ const Header : React.FC = ()=>{
                 <Wrapper>
                     <Navigate/>
                 </Wrapper>
-                <SideBar/>
             </Menu>
         </>
     )
